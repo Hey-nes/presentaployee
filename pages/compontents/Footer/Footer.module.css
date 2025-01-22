@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  min-height: 2.5rem;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  height: 1.5em;
+  margin: 0 0 0 0.5rem;
+}

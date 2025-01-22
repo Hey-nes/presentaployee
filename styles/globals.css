@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "VT323", monospace;
+}
+
+body {
+  background-color: #1c1b1b;
+  color: #eaeaea;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app {
+  height: 100dvh;
+  display: flex;
+}
+
+.title-is-1 {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 5rem;
+}
+
+.title-is-2 {
+  line-height: 1.15;
+  font-size: 2.5rem;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.button-large {
+  margin: 0;
+  padding: 0.25rem 0.75rem;
+  font-size: 3rem;
+}
+
+.button-small {
+  margin: 0;
+  padding: 0 0.2rem;
+  font-size: 1.25rem;
+}
+
+.button-large:active,
+.button-small:active {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5 ease;
+}
