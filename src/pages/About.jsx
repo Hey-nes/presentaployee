@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Gallery from "./compontents/Gallery/Gallery";
+import Gallery from "../compontents/Gallery/Gallery"
 
 const About = () => {
   const [isLandscape, setIsLandscape] = useState(false);
