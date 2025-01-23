@@ -39,7 +39,7 @@ img {
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -55,20 +55,12 @@ img {
 }
 
 .button-large {
-  margin: 0;
+  margin: 0.25rem 0;
   padding: 0.25rem 0.75rem;
   font-size: 3rem;
 }
 
-.button-small {
-  margin: 0;
-  padding: 0 0.2rem;
-  font-size: 1.25rem;
-}
-
-.button-large:active,
-.button-small:active {
-  cursor: pointer;
+.button-large:active {
   transform: scale(1.1);
   transition: transform 0.5 ease;
 }
