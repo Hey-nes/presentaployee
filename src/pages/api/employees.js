@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Greeting from "../../models/Greeting";
+import Employee from "../../models/Employee";
 
 const connectToDatabase = async () => {
   const uri = process.env.MONGODB_URI;
@@ -19,12 +19,12 @@ export default async function handler(req, res) {
     try {
       await connectToDatabase();
 
-      const greeting = await Greeting.find();
+      const employee = await Employee.find();
 
-      res.status(200).json(greeting);
+      res.status(200).json(employee);
     } catch (error) {
-      console.error("Error feting greeting: ", error);
-      res.status(500).json({ error: "Failed to fetch greeting" });
+      console.error("Error fetching employees: ", error);
+      res.status(500).json({ error: "Failed to fetch employees" });
     }
   }
 }

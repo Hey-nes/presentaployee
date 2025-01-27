@@ -13,7 +13,7 @@ const EasterEgg = () => {
       const jsonResponse = await response.json();
       setGreetings(jsonResponse);
     } catch (error) {
-      console.log(error);
+      console.log("Error fetching greeting", error);
     }
   };
 
